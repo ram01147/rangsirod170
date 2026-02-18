@@ -54,7 +54,7 @@
             text-transform: uppercase;
             letter-spacing: 4px;
             margin: 0;
-            font-style: italic; /* ทำให้ตัวเอียงดูพุ่งไปข้างหน้า */
+            font-style: italic;
             text-shadow: 4px 4px 0px var(--f1-red);
         }
 
@@ -78,8 +78,8 @@
         /* Card Design - Telemetry Box Style */
         .card {
             background: var(--carbon);
-            border-top: 4px solid #444; /* Default border */
-            border-radius: 8px 8px 24px 8px; /* มุมขวาล่างตัดมน */
+            border-top: 4px solid #444; 
+            border-radius: 8px 8px 24px 8px;
             padding: 25px;
             position: relative;
             box-shadow: 0 10px 20px rgba(0,0,0,0.5);
@@ -95,14 +95,15 @@
         /* แถบสีด้านบนการ์ดแต่ละใบ */
         .card:nth-child(1) { border-top-color: var(--f1-red); }
         .card:nth-child(2) { border-top-color: #ffbf00; } /* Yellow Flag */
-        .card:nth-child(3) { border-top-color: #00d2be; } /* Mercedes Petronas Green */
+        .card:nth-child(3) { border-top-color: #00d2be; } /* Mercedes Petronas */
         .card:nth-child(4) { border-top-color: #0600f0; } /* Alpine Blue */
         .card:nth-child(5) { border-top-color: #ff8700; } /* McLaren Orange */
         .card:nth-child(6) { border-top-color: #ffffff; } /* Haas White */
+        .card:nth-child(7) { border-top-color: #a200ff; } /* Ultra Soft Purple */
 
         .card:hover {
             transform: translateY(-5px) skewX(-2deg);
-            border-top-color: var(--f1-red); /* Hover แล้วเปลี่ยนเป็นสีแดงทั้งหมด */
+            border-top-color: var(--f1-red);
             box-shadow: 0 15px 30px rgba(225, 6, 0, 0.15);
         }
 
@@ -170,13 +171,18 @@
             left: 0;
         }
 
-        /* Label for sub-tasks */
         .sub-task-label {
             font-size: 12px;
             color: #666;
             margin-bottom: 2px;
             display: block;
             text-transform: uppercase;
+            margin-top: 10px;
+        }
+        
+        /* ปรับ margin-top ของ label แรกให้ชิดขอบ */
+        .sub-task-label:first-of-type {
+            margin-top: 0;
         }
 
         footer {
@@ -258,6 +264,19 @@
             <p>Race Poster Promotion</p>
         </div>
         <a href="https://www.canva.com/design/DAG7uSHrkxU/tephX808PnWbTObCanS0Dw/edit" target="_blank" class="btn">VIEW POSTER</a>
+    </div>
+
+    <div class="card">
+        <div>
+            <h2><span>GP 07</span> งานออกแบบพิเศษ</h2>
+            <p>Extra Lap Challenge (Dual Projects)</p>
+        </div>
+        
+        <span class="sub-task-label">Project A</span>
+        <a href="https://www.canva.com/design/DAHBodlB6xs/fqMw7sHweO17Akvm33t_BA/edit?ui=eyJFIjp7IkE_IjoiTiIsIlMiOiJBQUZqLXJUTzlwNCIsIlQiOjN9fQ" target="_blank" class="btn">VIEW PROJECT A</a>
+        
+        <span class="sub-task-label">Project B</span>
+        <a href="https://www.canva.com/design/DAHA-Ua9K_Y/OGWVcje8gzx3t4hvvEN_5w/edit" target="_blank" class="btn">VIEW PROJECT B</a>
     </div>
 
 </section>
